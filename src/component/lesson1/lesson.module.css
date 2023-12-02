@@ -1,0 +1,67 @@
+.lesson1 {
+  background-color: #141a1f;
+  border-bottom: 1px solid #1e242c;
+}
+
+.lesson1__input {
+  margin-right: 20px;
+  border-bottom: 1px solid #1e242c;
+}
+.lesson1__btn {
+  padding: 10px 40px;
+  border: 1px solid #1e242c;
+}
+.lesson1__todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.lesson1__form {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 50%;
+}
+.lesson1__list {
+  flex-basis: 50%;
+  border-left: 1px solid #1e242c;
+  padding-left: 20px;
+}
+.lesson1__item {
+  border: 2px solid #0c79b7;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.lesson1__item:last-child {
+  margin-bottom: 0;
+}
+.lesson1__item_id,
+.lesson1__item_title,
+.lesson1__item_checked {
+  display: flex;
+  column-gap: 10px;
+}
+.lesson1__item_id span,
+.lesson1__item_title span,
+.lesson1__item_checked span {
+  color: #0c79b7;
+}
+.lesson1__item_id span::first-letter,
+.lesson1__item_title span::first-letter,
+.lesson1__item_checked span::first-letter {
+  text-transform: uppercase;
+}
+.lesson1__item_checked {
+}
+.lesson1__item_checked h4 {
+}
+.lesson1__item_checked span {
+}
+.close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.close_btn:hover {
+  transform: scale(1.1);
+}
