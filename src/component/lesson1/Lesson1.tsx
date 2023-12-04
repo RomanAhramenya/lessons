@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from "react"
 import { ITodo } from "../../types/data"
 import TodoList from "./TodoList"
 import style from './lesson.module.css'
+import Board from "../visual-studio/Board"
+import Red from "../visual-studio/Red"
 interface Lesson_1Props {
 
 }
@@ -25,7 +27,18 @@ const Lesson1 = (props: Lesson_1Props) => {
    const handlerChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
       setValue(e.target.value)
    }
-
+   const removeTodo = (id: number): void => {
+      setTodos(todos.filter(todo => todo.id !== id))
+   }
+   const toggleTodo = (id: number): void => {
+      setTodos(todos.map(todo => {
+         if (todo.id !== id) return todo;
+         return {
+            ...todo,
+            complete: !todo.complete
+         }
+      }))
+   }
    useEffect(() => {
       if (inputRef.current) inputRef.current.focus()
    }, [])
@@ -34,6 +47,12 @@ const Lesson1 = (props: Lesson_1Props) => {
          <section className={`${style.lesson1} section`}>
             <div className="container">
                <div className={style.lesson1__inner}>
+                  <Board>
+                     &#60;<Red text='h2' />
+                  </Board>
+                  <Board>
+                     &#60;<Red text='h2' /> sdsdsd
+                  </Board>
                   <h2 className='section__title'>первый урок todo list</h2>
                   <div className={style.lesson1__todo}>
                      <form onSubmit={e => addTodo(e)} className={style.lesson1__form}>
@@ -42,7 +61,7 @@ const Lesson1 = (props: Lesson_1Props) => {
                      </form>
 
 
-                     <TodoList items={todos} />
+                     <TodoList items={todos} removeTodo={removeTodo} toggleTodo={toggleTodo} />
                   </div>
                </div>
             </div>

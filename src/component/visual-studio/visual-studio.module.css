@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap");
+.board {
+  background-color: #282c34;
+  padding: 20px 60px 20px 30px;
+  color: #fff;
+  border-radius: 10px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  position: relative;
+}
+.red {
+  color: #d39290;
+}
+.blue {
+  color: #79b6f2;
+}
+.green {
+  color: #52a691;
+}
+.violet {
+  color: #b6a5a5;
+}
+.yellow {
+  color: #fac855;
+}
+.board__copyBtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.board__copy_ok {
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  color: #52a691;
+}
