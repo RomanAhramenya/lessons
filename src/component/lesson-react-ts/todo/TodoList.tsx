@@ -1,4 +1,4 @@
-import { ITodo } from "../../types/data"
+import { ITodo } from "../../../types/data"
 import TodoItem from "./TodoItem"
 import style from './lesson.module.css'
 interface ITodoListProps {

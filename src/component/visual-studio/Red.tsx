@@ -1,13 +1,13 @@
 import style from "./visual-studio.module.css"
 interface IRedProps {
-    text: string
+    children: React.ReactNode
 }
 
 const Red = (props: IRedProps) => {
-    const { text } = props
+    const { children } = props
 
     return (
-        <span className={style.red}>{text}</span>
+        <span className={style.red}>{children}</span>
     )
 }
 

@@ -1,14 +1,14 @@
 import style from './visual-studio.module.css'
 interface IGreenProps {
-    text: string
+    children: React.ReactNode
 }
 
 const Green = (props: IGreenProps) => {
-    const { text } = props
+    const { children } = props
 
     return (
         <span className={style.green}>
-            {text}
+            {children}
         </span>
     )
 }

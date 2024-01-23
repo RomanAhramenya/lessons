@@ -1,0 +1,132 @@
+.container {
+}
+.container input {
+  background-color: white;
+  color: black;
+}
+.section {
+  margin-bottom: 50px;
+  box-shadow: 0 0 3px white;
+  padding-bottom: 10px;
+}
+.section p {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.section div,
+.section ul {
+  margin: 0 10px;
+}
+.section ul {
+  margin-bottom: 30px;
+}
+.nav__list {
+  display: flex;
+  font-size: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #1e242c;
+  padding: 0 10px 30px;
+}
+.nav__item {
+}
+.title {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 30px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 2px;
+  background-color: #282c34;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px #141a1f;
+}
+gold .video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.flex_container {
+  border: 3px solid #7f00ff;
+  animation: section_animation 0.2s linear;
+}
+
+.flex_item {
+  padding: 10px;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.2);
+  margin: 5px !important;
+}
+.item_1 {
+  background-color: rgb(163, 30, 30);
+}
+.item_2 {
+  background-color: rgb(29, 194, 186);
+}
+.item_3 {
+  background-color: rgb(0, 255, 191);
+}
+.item_4 {
+  background-color: rgb(14, 216, 88);
+}
+.item_5 {
+  background-color: rgb(6, 69, 14);
+}
+.item_6 {
+  background-color: rgb(247, 0, 255);
+}
+.item_7 {
+  background-color: rgb(0, 17, 255);
+}
+.item_8 {
+  background-color: rgb(12, 20, 82);
+}
+.dysplay_flex_btn_group {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.dysplay_flex_btn_group div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.dysplay_flex_btn_group button {
+  border: 1px solid #1e242c;
+  padding: 10px 20px;
+  background: green;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.dysplay_flex_btn_group button:hover {
+  background: rgba(0, 128, 0, 0.607);
+}
+@keyframes section_animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 780px) {
+  .item_5,
+  .item_6,
+  .item_7,
+  .item_8 {
+    display: none;
+  }
+}

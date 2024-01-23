@@ -1,14 +1,15 @@
+import React from 'react'
 import style from './visual-studio.module.css'
 interface IVioletProps {
-    text: string
+    children: React.ReactNode
 }
 
 const Violet = (props: IVioletProps) => {
-    const { text } = props
+    const { children } = props
 
     return (
         <span className={style.violet}>
-            {text}
+            {children}
         </span>
     )
 }

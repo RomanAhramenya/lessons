@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap");
+.container {
+  margin: 20px auto;
+}
 .board {
   background-color: #282c34;
   padding: 20px 60px 20px 30px;
@@ -7,6 +10,7 @@
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
   position: relative;
+  white-space: normal;
 }
 .red {
   color: #d39290;
@@ -18,7 +22,7 @@
   color: #52a691;
 }
 .violet {
-  color: #b6a5a5;
+  color: #c51bb7;
 }
 .yellow {
   color: #fac855;
@@ -27,10 +31,54 @@
   position: absolute;
   top: 15px;
   right: 20px;
+  padding: 5px 10px;
+  background-color: #21262d;
+  border-radius: 10px;
+  border: 1px solid #30363d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease;
+}
+.board__copyBtn svg {
+  fill: #7d8590;
+}
+.board__copyBtn:hover {
+  border-color: #898e95;
+  background-color: #30363d;
 }
 .board__copy_ok {
+  display: inline-block !important;
   position: absolute;
-  top: -20px;
-  right: 30px;
+  top: 0;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #21262d;
+  border-radius: 10px;
+  border: 1px solid #52a691;
   color: #52a691;
+  animation: copy 2s ease;
+}
+.board__placeholder {
+  font-size: 13px;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  color: #898e95;
+}
+@keyframes copy {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -35px;
+  }
+  50% {
+    opacity: 1;
+    top: -35px;
+  }
+  100% {
+    opacity: 0;
+    top: -35px;
+  }
 }
