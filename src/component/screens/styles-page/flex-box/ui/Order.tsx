@@ -45,7 +45,7 @@ const Order = () => {
             <p>order может менять порядок элементов </p>
 
             <ul style={{ fontSize: '16px', display: 'flex', gap: '5px' }}>
-                <li style={styleLi}> Item 3
+                <li style={styleLi}> Item 3 {order_1}
                     <button onClick={() => handleOrder_1('-2')} style={styleBtn}>order: -2;</button>
                     <button onClick={() => handleOrder_1('-1')} style={styleBtn}>order: -1;</button>
                     <button onClick={() => handleOrder_1('0')} style={styleBtn}>order: 0;</button>
@@ -53,7 +53,7 @@ const Order = () => {
                     <button onClick={() => handleOrder_1('2')} style={styleBtn}>order: 2;</button>
 
                 </li>
-                <li style={styleLi}> Item 4
+                <li style={styleLi}> Item 4 {order_2}
                     <button onClick={() => handleOrder_2('-2')} style={styleBtn}>order: -2;</button>
                     <button onClick={() => handleOrder_2('-1')} style={styleBtn}>order: -1;</button>
                     <button onClick={() => handleOrder_2('0')} style={styleBtn}>order: 0;</button>

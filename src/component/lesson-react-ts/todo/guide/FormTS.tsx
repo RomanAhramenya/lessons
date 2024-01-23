@@ -23,46 +23,46 @@ const FormTS = (props: IFormTSProps) => {
 
 export default FormTS
 
-type LoginFormFields = {
-    email: string;
-    password: string;
-    remember: boolean
-}
-type FormFields = {
-    email: HTMLInputElement
-    password: HTMLInputElement
-    remember: HTMLInputElement
-}
-function Forma() {
+// type LoginFormFields = {
+//     email: string;
+//     password: string;
+//     remember: boolean
+// }
+// type FormFields = {
+//     email: HTMLInputElement
+//     password: HTMLInputElement
+//     remember: HTMLInputElement
+// }
+// function Forma() {
 
-    const onSubmit = (formFields: LoginFormFields) => {
-        console.log(formFields)
-    }
-    const handlerSubmit: React.FormEventHandler<HTMLFormElement & FormFields> = (e) => {
-        e.preventDefault()
-        const form = e.currentTarget
-        const { email, password, remember } = form
-        onSubmit({
-            email: email.value,
-            password: password.value,
-            remember: remember.checked
-        })
-    }
-    return (
-        <form onSubmit={handlerSubmit}>
-            <label htmlFor="">
-                <span>Email</span>
-                <input type="email" name="email" required />
-            </label>
-            <label htmlFor="">
-                <span>Password</span>
-                <input type="password" name="password" required />
-            </label>
-            <label htmlFor="">
-                <span>Remember me</span>
-                <input type="checkbox" name="remember" required />
-            </label>
-            <button type="submit">Logn</button>
-        </form>
-    )
-}
+//     const onSubmit = (formFields: LoginFormFields) => {
+//         console.log(formFields)
+//     }
+//     const handlerSubmit: React.FormEventHandler<HTMLFormElement & FormFields> = (e) => {
+//         e.preventDefault()
+//         const form = e.currentTarget
+//         const { email, password, remember } = form
+//         onSubmit({
+//             email: email.value,
+//             password: password.value,
+//             remember: remember.checked
+//         })
+//     }
+//     return (
+//         <form onSubmit={handlerSubmit}>
+//             <label htmlFor="">
+//                 <span>Email</span>
+//                 <input type="email" name="email" required />
+//             </label>
+//             <label htmlFor="">
+//                 <span>Password</span>
+//                 <input type="password" name="password" required />
+//             </label>
+//             <label htmlFor="">
+//                 <span>Remember me</span>
+//                 <input type="checkbox" name="remember" required />
+//             </label>
+//             <button type="submit">Logn</button>
+//         </form>
+//     )
+// }

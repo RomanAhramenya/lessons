@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 import style from './../../styles-page.module.css'
-import Board from "../../../../visual-studio/Board"
+
 
 type IFlexWrap = 'flex-wrap: wrap;' | 'flex-wrap: nowrap;' | 'flex-wrap: wrap-reverse;'
 const IFlexWrapItem = ['главная', 'о нас', 'контакты']
@@ -57,7 +57,7 @@ const FlexWrap = () => {
             </div>
 
 
-
+            <p>{titleFlexWrap}</p>
             <div ref={refFlexWrapContainer} style={styleDivFlexWrapContainer} >
                 {IFlexWrapItem.map((item, index) => {
                     return <div key={index} style={styleDivFlexWrapItem}>{item}</div>

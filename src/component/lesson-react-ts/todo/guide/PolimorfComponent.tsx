@@ -1,4 +1,4 @@
-import Board from "../../../visual-studio/Board"
+
 import Red from "../../../visual-studio/Red"
 import Violet from "../../../visual-studio/Violet"
 import Yellow from "../../../visual-studio/Yellow"

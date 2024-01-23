@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom"
 import CustomLink from "../react-router-guide/CustomLink"
 import imgHook from './../../assets/images/icons/react.png'
-import UseStateHook from "./UseStateHook"
 import './../../index.css'
 
 const HooksPage = () => {
