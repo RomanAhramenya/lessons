@@ -47,11 +47,19 @@ const BurgerMenu = () => {
                     <li><CustomLinkMain to='router-dom'>React router dom 6</CustomLinkMain></li>
                     <li>  <CustomLinkMain to='ts'>Type script</CustomLinkMain></li>
                     <li>  <CustomLinkMain to='hooks'>Хуки</CustomLinkMain></li>
+                    <li>  <CustomLinkMain to='suspense'>Suspense</CustomLinkMain></li>
+                    <li>  <CustomLinkMain to='error-boundary'>ErrorBoundary</CustomLinkMain></li>
                 </ul>
                 <h3>Styles</h3>
                 <ul>
                     <li>
                         <CustomLinkMain to='styles/flex-box'>Css</CustomLinkMain>
+                    </li>
+                </ul>
+                <h3>Собеседования</h3>
+                <ul>
+                    <li>
+                        <CustomLinkMain to='interviews-js'>задачи js</CustomLinkMain>
                     </li>
                 </ul>
             </nav>}

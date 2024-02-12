@@ -123,12 +123,13 @@ legend {
   display: block;
 }
 body {
-  font-family: "Inconsolata", monospace;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   overflow-x: hidden;
   background-color: #141a1f;
   position: relative;
+  font-weight: 400;
 }
 .container {
   padding: 0 30px;
@@ -162,6 +163,9 @@ code {
 }
 .guide__item {
   animation: section_animation 0.2s linear;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  margin: 30px 0;
 }
 .guide__item div {
   margin: 20px auto;

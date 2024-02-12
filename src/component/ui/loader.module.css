@@ -1,0 +1,59 @@
+.loader_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  gap: 10px;
+  left: calc(50% - 35px);
+}
+.loader_item {
+  width: 10px;
+  height: 10px;
+  background: white;
+  opacity: 0.1;
+}
+
+.loader_item__1 {
+  animation: animation_1 1s infinite;
+}
+.loader_item__2 {
+  animation: animation_2 1s infinite;
+}
+.loader_item__3 {
+  animation: animation_3 1s infinite;
+}
+.loader_item__4 {
+  animation: animation_4 1s infinite;
+}
+@keyframes animation_1 {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 1;
+  }
+}
+@keyframes animation_2 {
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes animation_3 {
+  50% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+@keyframes animation_4 {
+  75% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

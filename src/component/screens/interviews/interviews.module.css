@@ -1,0 +1,23 @@
+.interviews_js__list {
+}
+.interviews_js__item {
+  padding: 20px 0;
+  border-bottom: 1px solid gray;
+}
+.interviews_js__item h5 {
+  margin-bottom: 20px;
+}
+.interviews_js__item div {
+  overflow: hidden;
+  height: 0;
+  transition: all 0.2s ease;
+}
+.interviews_js__item button {
+  text-decoration: underline;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.interviews_js__item button:hover {
+  opacity: 0.8;
+}

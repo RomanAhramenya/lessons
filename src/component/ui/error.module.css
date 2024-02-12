@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+  color: red;
+  text-shadow: 0 0 2px black;
+}
+.image_box {
+  max-width: 200px;
+  height: auto;
+  overflow: hidden;
+  box-shadow: 0 0 20px red;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+.static_text {
+}
+.error_text {
+}
+.goback {
+}

@@ -26,7 +26,18 @@ const HooksPage = () => {
                     <li className='navigate__item'>
                         <CustomLink parent="/hooks/" to="use-effect">useEffect()</CustomLink>
                     </li>
-
+                    <li className='navigate__item'>
+                        <CustomLink parent="/hooks/" to="use-deferred-value">useDeferredValue()</CustomLink>
+                    </li>
+                    <li className='navigate__item'>
+                        <CustomLink parent="/hooks/" to="use-memo">useMemo()</CustomLink>
+                    </li>
+                    <li className='navigate__item'>
+                        <CustomLink parent="/hooks/" to="use-callback">useCallback()</CustomLink>
+                    </li>
+                    <li className='navigate__item'>
+                        <CustomLink parent="/hooks/" to="use-ref">useRef()</CustomLink>
+                    </li>
                 </ul>
 
 

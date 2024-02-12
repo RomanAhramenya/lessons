@@ -114,21 +114,7 @@
 .menu_animation_unmount {
   animation: menu_unmount 0.15s linear;
 }
-.navigate_btns {
-  position: fixed;
-  display: flex;
-  right: 30px;
-  top: 30px;
-  background-color: #1f252b;
 
-  border-radius: 5px;
-}
-.navigate_btns button {
-  padding: 20px 10px;
-}
-.navigate_btns button:hover {
-  background-color: #141a1f;
-}
 @keyframes menu_mount {
   0% {
     transform: translateX(-100%);

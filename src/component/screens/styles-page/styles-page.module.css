@@ -46,12 +46,7 @@
   font-weight: 900;
   text-shadow: 1px 1px 1px #141a1f;
 }
-gold .video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-}
+
 .flex_container {
   border: 3px solid #7f00ff;
   animation: section_animation 0.2s linear;

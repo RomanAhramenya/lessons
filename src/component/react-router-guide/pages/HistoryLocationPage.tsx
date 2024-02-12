@@ -49,7 +49,7 @@ const HistoryLocationPage = (props: IHistoryLocationPageProps) => {
             </li>
             <li className="guide__item">
                 <div> Приватные роуты</div>
-                <li className="guide__item"></li>
+
             </li>
         </ul>
     )

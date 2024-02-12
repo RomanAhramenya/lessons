@@ -5,17 +5,7 @@ import logo from './../../assets/images/header-logo.png'
 import BurgerMenu from './BurgerMenu'
 
 const LayoutMain = () => {
-    const navigate = useNavigate();
 
-    // const goBack = () => navigate('/posts')
-    const goBack = () => {
-
-        navigate(-1)
-    }
-    const goForward = () => {
-
-        navigate(1)
-    }
     return (
         <>
             <header className='container'>
@@ -28,10 +18,7 @@ const LayoutMain = () => {
                 </div>
 
             </header>
-            <div className={style.navigate_btns}>
-                <button onClick={goBack}>&lArr; назад</button>
-                <button onClick={goForward}> вперед &rArr;</button>
-            </div>
+
             <BurgerMenu />
             <main className={`${style.main} container`}>
 
