@@ -1,6 +1,6 @@
 import style from './layout.module.css'
 
-import { NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import logo from './../../assets/images/header-logo.png'
 import BurgerMenu from './BurgerMenu'
 

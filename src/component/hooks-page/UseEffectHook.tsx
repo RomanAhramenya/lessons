@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import Board from '../visual-studio/Board'
+
 import './../../index.css'
 import img_1 from './../../assets/images/hooks/Screenshot_use-effect_1.png'
 import img_2 from './../../assets/images/hooks/Screenshot_use-effect_2.png'

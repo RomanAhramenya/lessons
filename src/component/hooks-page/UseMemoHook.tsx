@@ -9,7 +9,7 @@ import screen5 from './../../assets/images/hooks/Screenshot_5.png'
 import Violet from "../visual-studio/Violet"
 import Yellow from "../visual-studio/Yellow"
 import Video from "../ui/Video"
-import Loader from "../ui/Loader"
+
 interface Count {
    value: number
 }

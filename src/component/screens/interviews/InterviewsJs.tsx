@@ -1,4 +1,4 @@
-import { ReactNode, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import style from './interviews.module.css'
 import screen1 from './../../../assets/images/interviews/Screenshot_1.png'
 const data = [

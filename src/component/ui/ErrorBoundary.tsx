@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import img from './../../assets/images/sorry-oops.gif'
 import style from './error.module.css'
-import { Link, useNavigate } from 'react-router-dom';
 import GoBack from './GoBack';
 
 interface Props {

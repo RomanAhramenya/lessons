@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import Blue from "../visual-studio/Blue"
 import style from './hooks-style.module.css'
-import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react"
+import { memo, useCallback, useEffect, useRef, useState } from "react"
 import Loader from "../ui/Loader"
 import screen9 from './../../assets/images/hooks/Screenshot_9.png'
 import screen10 from './../../assets/images/hooks/Screenshot_10.png'
